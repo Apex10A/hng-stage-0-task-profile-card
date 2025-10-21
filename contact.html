@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-testid="test-html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Praise Afolabi">
+    <title data-testid="test-page-title">Contact me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-testid="test-contact-body">
+    <div class="bg page-bg" data-testid="test-background">
+        <div class="content-container" data-testid="test-content-container">
+            <main class="page-content contact-page" data-testid="test-contact-page">
+                <nav class="page-nav" aria-label="Main navigation">
+                    <a class="nav-link" href="index.html" data-testid="test-link-home">Home</a>
+                    <a class="nav-link" href="about.html" data-testid="test-link-about">About Me</a>
+                </nav>
+
+                <header class="page-header">
+                    <p class="page-eyebrow">Let’s collaborate</p>
+                    <h1>Contact Praise</h1>
+                    <p class="page-lead">Have something in mind? lets help you out Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quis!.</p>
+                </header>
+
+                <div class="contact-layout">
+                    <section class="info-card contact-details" aria-label="Contact details">
+                        <h2>Ways to connect</h2>
+                        <ul class="contact-list">
+                            <li>
+                                <span class="label">Email</span>
+                                <a href="mailto:Pafolabi740@gmail.com">Pafolabi740@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="label">Location</span>
+                                <p>Lagos State, Nigeria</p>
+                            </li>
+                            <li>
+                                <span class="label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/praise-afolabi" target="_blank" rel="noopener noreferrer">Praise Afolabi</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="info-card contact-form-card" aria-label="Send a message">
+                        <h2>Send a message</h2>
+                        <form class="contact-form" data-testid="test-contact-form" novalidate>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-name">Full name</label>
+                                <input class="form-input" type="text" id="contact-name" name="fullName" data-testid="test-contact-name" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-name">
+                                <p class="error-message is-hidden" id="contact-error-name" data-testid="test-contact-error-name" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-email">Email</label>
+                                <input class="form-input" type="email" id="contact-email" name="email" data-testid="test-contact-email" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-email">
+                                <p class="error-message is-hidden" id="contact-error-email" data-testid="test-contact-error-email" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-subject">Subject</label>
+                                <input class="form-input" type="text" id="contact-subject" name="subject" data-testid="test-contact-subject" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-subject">
+                                <p class="error-message is-hidden" id="contact-error-subject" data-testid="test-contact-error-subject" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-message">Message</label>
+                                <textarea class="form-textarea" id="contact-message" name="message" rows="6" data-testid="test-contact-message" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-message"></textarea>
+                                <p class="input-hint" id="contact-message-hint">Tell me about your ideas</p>
+                                <p class="error-message is-hidden" id="contact-error-message" data-testid="test-contact-error-message" aria-live="polite"></p>
+                            </div>
+
+                            <button class="btn" type="submit" data-testid="test-contact-submit">Send message</button>
+                            <p class="form-success is-hidden" data-testid="test-contact-success" role="status" aria-live="polite" aria-hidden="true"></p>
+                        </form>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="contact.js" data-testid="test-contact-script"></script>
+</body>
+</html>
