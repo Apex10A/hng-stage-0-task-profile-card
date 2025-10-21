@@ -3,84 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Praise Afolabi">
-    <title data-testid="test-page-title">Contact Me</title>
+    <meta name="description" content="About Praise Afolabi">
+    <title data-testid="test-page-title">About Praise Afolabi</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-testid="test-contact-body">
+<body data-testid="test-about-body">
     <div class="bg page-bg" data-testid="test-background">
         <div class="content-container" data-testid="test-content-container">
-            <main class="page-content contact-page" data-testid="test-contact-page">
+            <main class="page-content about-page" data-testid="test-about-page">
                 <nav class="page-nav" aria-label="Main navigation">
                     <a class="nav-link" href="index.html" data-testid="test-link-home">Home</a>
-                    <a class="nav-link" href="about.html" data-testid="test-link-about">About Me</a>
+                    <a class="nav-link" href="contact.html" data-testid="test-link-contact">Contact</a>
                 </nav>
 
                 <header class="page-header">
-                    <p class="page-eyebrow">You wan reach out?</p>
-                    <h1>Link Up With me</h1>
+                    <p class="page-eyebrow">Yo! You wan know small about me?</p>
+                    <h1>My HNG Wahala Journey</h1>
                     <p class="page-lead">
-                        Get idea wey you wan run? or you need small collab or just wan yarn? make we reason am together
+                        Just a small gist about how the internship dey go, where I start from, where I dey go, and how I dey take hold body for this tech street, e no easy man!
                     </p>
                 </header>
 
-                <div class="contact-layout">
-                    <section class="info-card contact-details" aria-label="Contact details">
-                        <h2>How you fit reach me</h2>
-                        <ul class="contact-list">
-                            <li>
-                                <span class="label">Email</span>
-                                <a href="mailto:Pafolabi740@gmail.com">Pafolabi740@gmail.com</a>
-                            </li>
-                            <li>
-                                <span class="label">Location</span>
-                                <p>Lagos, Nigeria</p>
-                            </li>
-                            <li>
-                                <span class="label">LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/praise-afolabi" target="_blank" rel="noopener noreferrer">Praise Afolabi</a>
-                            </li>
-                        </ul>
-                    </section>
+                <section class="info-card about-section" data-testid="test-about-bio">
+                    <h2>Who I Be</h2>
+                    <p>
+                        My name na <strong>Praise Afolabi</strong>, if you don dey HNG small, you go don see my face one or two times. 
+                        This na my third time for this internship matter. I finish reach finalist for cohort 11 and 12, and I still come back again, because person wey no learn finish no dey rest
+                    </p>
+                </section>
 
-                    <section class="info-card contact-form-card" aria-label="Send a message">
-                        <h2>Send Me Message</h2>
-                        <form class="contact-form" data-testid="test-contact-form" novalidate>
-                            <div class="form-group">
-                                <label class="form-label" for="contact-name">Your Full Name</label>
-                                <input class="form-input" type="text" id="contact-name" name="fullName" data-testid="test-contact-name" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-name">
-                                <p class="error-message is-hidden" id="contact-error-name" data-testid="test-contact-error-name" aria-live="polite"></p>
-                            </div>
+                <section class="info-card about-section" data-testid="test-about-goals">
+                    <h2>Wetin I Wan Gain gangan?</h2>
+                    <ul>
+                        <li>I dey learn Mobile and Backend for the first time, make I sabi build better apps wey go make sense</li>
+                        <li>I wan sabi work well with my teammates</li>
+                        <li>And lastly, make I use all this hustle find work or gig, make person fit chop abeg </li>
+                    </ul>
+                </section>
 
-                            <div class="form-group">
-                                <label class="form-label" for="contact-email">Your Email</label>
-                                <input class="form-input" type="email" id="contact-email" name="email" data-testid="test-contact-email" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-email">
-                                <p class="error-message is-hidden" id="contact-error-email" data-testid="test-contact-error-email" aria-live="polite"></p>
-                            </div>
+                <section class="info-card about-section" data-testid="test-about-confidence">
+                    <h2>Wetin I Still Dey Work On</h2>
+                    <p>
+                        I sabi frontend things wella, but I still dey try boost myself in TypeScript and testing for bigger projects
+                        This stage go help me ask questions, make mistake, correct am, and still move forward
+                    </p>
+                </section>
 
-                            <div class="form-group">
-                                <label class="form-label" for="contact-subject">Subject</label>
-                                <input class="form-input" type="text" id="contact-subject" name="subject" data-testid="test-contact-subject" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-subject">
-                                <p class="error-message is-hidden" id="contact-error-subject" data-testid="test-contact-error-subject" aria-live="polite"></p>
-                            </div>
+                <section class="info-card about-section" data-testid="test-about-future-note">
+                    <h2>Note to Future Me?</h2>
+                    <p>
+                        No ever give up. Continue to push, continue to grind, the big opportunity go land soon, no worry
+                    </p>
+                </section>
 
-                            <div class="form-group">
-                                <label class="form-label" for="contact-message">Message</label>
-                                <textarea class="form-textarea" id="contact-message" name="message" rows="6" data-testid="test-contact-message" required aria-required="true" aria-invalid="false" aria-describedby="contact-error-message"></textarea>
-                                <p class="input-hint" id="contact-message-hint">
-                                    Tell me wetin dey your mind
-                                </p>
-                                <p class="error-message is-hidden" id="contact-error-message" data-testid="test-contact-error-message" aria-live="polite"></p>
-                            </div>
-
-                            <button class="btn" type="submit" data-testid="test-contact-submit">Send Message</button>
-                            <p class="form-success is-hidden" data-testid="test-contact-success" role="status" aria-live="polite" aria-hidden="true"></p>
-                        </form>
-                    </section>
-                </div>
+                <section class="info-card about-section" data-testid="test-about-extra">
+                    <h2>Small Extra Talk</h2>
+                    <p>
+                        HNG no be beans but na big opportunity be this, na why i still dey do HNG.
+                    </p>
+                </section>
             </main>
         </div>
     </div>
-    <script src="contact.js" data-testid="test-contact-script"></script>
 </body>
 </html>
